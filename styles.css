@@ -1,0 +1,1605 @@
+@font-face {
+  font-family: 'CodecColdTrial-regular';
+  src: url('fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CodecColdTrial-bold';
+  src: url('fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CodecColdTrial-italic';
+  src: url('fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CodecColdTrial-regular';
+  src: url('fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+}
+
+/*Index - pagina principal*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(28, 56, 102);
+}
+
+.header_index {
+  background-image: url('images/presentacionCOU.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+@media (max-width: 1600px) {
+  .header_index {
+    background-image: url('images/presentacionCOU1700px.png');
+  }
+}
+
+/*Inicio Nav*/
+
+#navbar {
+  position: relative; /* o posición inicial según la estructura de tu diseño */
+  transition: top 0.3s;
+}
+
+#navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Opcional: asegura que el navbar ocupe el ancho completo */
+  z-index: 1000; /* Ajusta según sea necesario */
+  background-color: rgb(28, 56, 102);
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+}
+
+#navbar.sticky .nav_imagenLogo {
+  height: 50px;
+}
+
+.nav_header {
+  display: flex;
+  padding: 20px 0px 20px 20px;
+}
+
+.nav_imagenLogo {
+  height: 100px;
+}
+
+.nav_contactos img {
+  width: 32px;
+}
+
+.nav_navegacion {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav_lista {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.nav_lista ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_lista ul a{
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_lista ul li {
+  padding: 0px 20px;
+  list-style: none;
+  color: white;
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.nav_lista ul li:hover {
+  color: rgb(119, 160, 212);
+}
+
+.nav_contactos {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 200px;
+  justify-content: space-evenly;
+}
+
+.nav_button_contactos {
+  color: white;
+}
+
+
+
+/*Finaliza Nav*/
+
+/*Inicia main index*/
+/*Presentacion*/
+
+.main_index_section_presentacion {
+  margin: 0px;
+  background-color: rgb(28, 56, 102);
+  padding: 100px 0px;
+  background-image: url('images/presentacionCOU.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.main_index_section_presentacion h1 {
+  margin-top: 0px;
+  font-family: 'CodecColdTrial', sans-serif;
+  color: white;
+}
+
+#cont {
+  color: white;
+  font-size: 36px;
+  width: 500px;
+  margin-left: 150px;
+
+  p {
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+
+
+#fli {
+  height: 70px;
+  overflow: hidden;
+}
+
+#fli>div>div {
+  color: rgb(119, 160, 212);
+  height: 70px;
+  margin-bottom: 39px;
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#fli div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.presentacion_texto_dinamico {
+  font-family: 'CodecColdTrial', sans-serif;
+  text-align: center;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -220px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+
+  33% {
+    margin-top: -180px;
+  }
+
+  38% {
+    margin-top: -90px;
+  }
+
+  66% {
+    margin-top: -90px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+
+.section_presentacion_eslogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.section_presentacion_eslogan h1{
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.section_presentacion_eslogan:hover{
+  .titulo_eslogan1 {
+    color: rgb(119, 160, 212);
+  }
+  .titulo_eslogan2 {
+    color: rgb(119, 160, 212);
+  }
+  .font_eslogan {
+    color: white !important;
+  }
+}
+
+/*Finaliza presentacion*/
+/*Empieza carrusel index*/
+/* Función para crear un círculo */
+.main_index_section_carrusel_titulo {
+  margin-bottom: 50px;
+  color: rgb(28, 56, 102);
+  font-size: 45px;
+}
+
+.circle {
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+
+.second {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(28, 56, 102);
+
+}
+
+/* Variables */
+.bgBlue {
+  background-color: rgb(28, 56, 102);
+}
+
+.cardBlue {
+  background-color: rgb(28, 56, 102);
+}
+
+.font {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilos para el cuerpo y HTML */
+html,
+body {
+  height: 100%;
+}
+
+.link_industrias {
+  text-decoration: none;
+}
+
+/* Estilos para el contenedor central */
+.main_index_section_carrusel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Estilos para el contenedor principal */
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 74em;
+}
+
+.wrapper>.inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card>img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 150px;
+  padding: 10px 0px;
+}
+
+.card>.content {
+  background-color: rgb(28, 56, 102);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1em;
+  text-align: center;
+  width: 17.5em;
+}
+
+.card>.content>h1,
+.card>.content>h3 {
+  margin: 0.35em 0;
+  font-family: 'CodecColdTrial', sans-serif;
+}
+
+.card>.content>h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.card>.content>h3 {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* Estilos para el mapa */
+.map {
+  margin-top: 1em;
+}
+
+.map>button {
+  background-color: rgb(28, 56, 102);
+  cursor: pointer;
+  position: relative;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.map>button.active {
+  background: transparent;
+  /* Uso de la variable */
+  position: relative;
+  border-radius: 100%;
+  padding: 5px;
+  border: 1px solid black;
+
+}
+
+/*Finaliza carrusel index*/
+
+/*Busca tu empresa*/
+
+.main_section_buscar_empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  color: black;
+}
+
+.main_section_buscar_empresa h1 {
+  font-family: 'CodecColdTrial', sans-serif;
+  color: rgb(28, 56, 102);
+  font-size: 45px;
+
+}
+
+.main_section_buscar_empresa p {
+  margin-top: 20px;
+  font-family: 'CodecColdTrial', sans-serif;
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.button_modif {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'CodecColdTrial', sans-serif;
+  margin-top: 20px;
+  border: 1px solid gray;
+  text-decoration: none;
+}
+
+/* Estilo del botón al pasar el ratón por encima */
+.button_modif:hover {
+  background-color: rgb(28, 56, 102);
+  border: 1px solid rgb(28, 56, 102);
+  color: #fff;
+  /* Cambio de color del texto al pasar el ratón */
+}
+
+/* Restablecer estilos del botón cuando se haga clic */
+.button_modif:active {
+  transform: translateY(1px);
+  /* Efecto de presionado */
+}
+
+/*Finaliza busca tu empresa*/
+
+
+/*Empieza section beneficios*/
+.main_section_beneficios {
+  margin-top: 150px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.contendor_section_benficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding-right: 100px; /*Es para quede centrado el section y la imagen se corra un poco mas la izq, sino queda mal*/
+}
+
+
+.main_section_contInt_beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.main_section_contInt_beneficios h1 {
+  color: rgb(28, 56, 102);
+  margin-bottom: 30px;
+}
+
+.main_section_contInt_beneficios p,
+h1 {
+  font-family: 'CodecColdTrial', sans-serif;
+}
+
+.main_section_contInt_beneficios p {
+  font-size: 17px;
+}
+
+.imagen_beneficio_cou {
+  width: 600px;
+}
+
+/*Finaliza section beneificos*/
+
+/*Empresas que nos eligen*/
+.section_empresas_eligen {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(53, 103, 168);
+}
+
+.section_empresas_eligen h1 {
+  color: white;
+  font-family: 'CodecColdTrial', sans-serif;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.logos {
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  width: 100%;
+  height: 200px;
+}
+
+.logos:before {
+  left: 0px;
+  background: linear-gradient(to right, rgb(53, 103, 168), rgba(255, 255, 255, 0));
+}
+
+.logos:after {
+  right: 0px;
+  background: linear-gradient(to left, rgb(53, 103, 168), rgba(255, 255, 255, 0));
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  content: "";
+  z-index: 2;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 85px;
+  margin: 0 40px;
+}
+
+/*Finaliza empresas que nos eligen*/
+
+.section_formulario {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: rgb(28, 56, 102);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+
+  form {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: rgb(28, 56, 102);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #1c3866;
+  }
+}
+
+footer {
+  background-color: rgb(28, 56, 102);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 50px;
+  ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+    font-family: 'CodecColdTrial', sans-serif;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  img {
+    margin-top: 100px;
+    width: 500px;
+  }
+}
+
+.footer_contenedor_listas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.derechosReservados {
+  margin-top: 100px;
+  color: white;
+  font-family: 'CodecColdTrial', sans-serif;
+
+}
+
+/*Finaliza main index*/
+
+
+/*Pagina industria retail*/
+.header_retail {
+  background-image: url('images/tipo_industria/retail/backRetail.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+#navbar_retail {
+  position: relative; /* o posición inicial según la estructura de tu diseño */
+  transition: top 0.3s;
+}
+
+#navbar_retail.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Opcional: asegura que el navbar ocupe el ancho completo */
+  z-index: 1000; /* Ajusta según sea necesario */
+  background-color: rgb(28, 56, 102);
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+}
+
+#navbar_retail.sticky .nav_imagenLogo {
+  height: 50px;
+}
+
+.titulo_retail {
+  color: white;
+}
+
+.section_presentacion_tipo_industria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 50px;
+  color: white;
+}
+
+.section_presentacion_tipo_industria h1{
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.section_presentacion_tipo_industria h3{
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 200px;
+  font-weight: lighter;
+}
+
+.main_industria_section_presentacion{
+  margin: 0px;
+  padding: 100px 0px;
+  height: 300px;
+}
+
+.section_presentacion_industria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 50px;
+  color: white;
+}
+
+.section_presentacion_industria h1{
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.section_presentacion_industria h3{
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.titulo_industria1 {
+  color: rgb(119, 160, 212);
+}
+
+.section_ayuda_industria {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.section_ayuda_industria h1{
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: rgb(28, 56, 102);
+}
+
+.resumen_texto_industria {
+  font-family: 'CodecColdTrial', sans-serif;
+  width: 70%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.section_tipo_beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tipo_beneficio {
+  margin-top: 200px;
+  display: flex;
+  font-family: 'CodecColdTrial', sans-serif;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly
+}
+
+.tipo_beneficio img{
+  width: 600px;
+}
+
+.tipo_beneficio div{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  justify-content: center;
+}
+
+.tipo_beneficio div h1{
+  text-align: left;
+  font-size: 35px;
+  color: rgb(28, 56, 102);
+  margin-bottom: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.tipo_beneficio div p{
+  text-align: center;
+  font-size: 25px;
+}
+
+.cointainer_industria {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 20px 10px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 23px;
+  }
+
+  li strong {
+    color: rgb(28, 56, 102);
+  }
+}
+
+.segundo_beneficio {
+  margin-top: 150px;
+  background-color: rgb(28, 56, 102);
+  padding: 20px 10px;
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+
+  div h1 {
+    color: white;
+  }
+
+  .cointainer_industria {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    padding: 10px 0px;
+  
+    li {
+      color: white;
+    }
+  
+    li strong {
+      color: rgb(53, 103, 168);
+    }
+  }
+}
+
+.segundo_beneficio img{
+  margin-left: 0px;
+  margin-right: 100px;
+}
+
+.section_otras_industrias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: 'CodecColdTrial', sans-serif;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.section_otras_industrias h1{
+  color: rgb(28, 56, 102);
+  font-size: 40px;
+}
+
+.section_otras_industrias a{
+  font-size: 25px;
+  color: rgb(53, 103, 168);
+}
+
+/*Finaliza Pagina industria retail*/
+
+/*Pagina Servicios*/
+.header_servicios {
+  background-image: url('images/servicios-COU.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar_servicios {
+  position: relative; /* o posición inicial según la estructura de tu diseño */
+  transition: top 0.3s;
+}
+
+#navbar_servicios.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Opcional: asegura que el navbar ocupe el ancho completo */
+  z-index: 1000; /* Ajusta según sea necesario */
+  background-color: rgb(28, 56, 102);
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+}
+
+#navbar_servicios.sticky .nav_imagenLogo {
+  height: 50px;
+}
+
+.main_servicios_section_presentacion{
+  margin: 0px;
+  padding: 100px 0px;
+  /*background-image: url('images/servicios-COU.png');*/
+  height: 500px;
+}
+
+.section_servicios_aplicaciones {
+  font-family: 'CodecColdTrial', sans-serif;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_servicios_aplicaciones h1 {
+  color: rgb(28, 56, 102);
+  font-size: 40px;
+}
+
+.section_servicios_aplicaciones h3 {
+  color: rgb(53, 103, 168);
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.aplicaciones_partner_servicios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container-partner-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-container {
+  width: 200px; /* Ajusta el tamaño según tu preferencia */
+  height: 150px; /* Ajusta el tamaño según tu preferencia */
+  margin-right: 20px; /* Espacio entre imágenes */
+  cursor: pointer;
+  
+}
+
+.image-container img {
+  width: 300px;
+  height: 125px;
+  transition: transform 0.8s ease, opacity 0.5s ease; /* Transición suave para transform y opacidad */
+}
+
+#imagen-oracleMono,
+#imagen-logilityMono,
+#imagen-inforMono {
+  opacity: 0; /* Inicialmente ocultar las imágenes "Mono" */
+  visibility: hidden;
+}
+
+/* Mostrar la imagen "Mono" correspondiente en hover */
+#image-container-oracle:hover #imagen-oracleMono,
+#image-container-logility:hover #imagen-logilityMono,
+#image-container-infor:hover #imagen-inforMono {
+  opacity: 1; /* Mostrar la imagen "Mono" */
+  visibility: visible;
+  transform: translateY(-5px); /* Desplazamiento hacia arriba */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Ocultar la imagen original en hover */
+#image-container-oracle:hover #imagen-oracle,
+#image-container-logility:hover #imagen-logility,
+#image-container-infor:hover #imagen-infor {
+  display: none;
+}
+
+
+.textoApp-servicios {
+  display: none;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center;
+  width: 60%;
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: 30px;
+  color: rgb(53, 103, 168);
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.service-app-button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 180px;
+}
+
+
+.section-services {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  font-family: 'CodecColdTrial', sans-serif;
+  color: black;
+}
+
+.services-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+
+
+.services-button-desplegables {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(28, 56, 102); /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+  width: 400px;
+}
+
+.services-button-desplegables:hover {
+  background-color: white; /* Cambio de color al pasar el mouse */
+  color: #007bff;
+}
+
+#button-services-plataformas {
+  margin:0px;
+  padding: 10px 20px;
+}
+
+/*#button-services-plataformas:hover  ~ .menu_desplegable_plataformas {
+  display: flex;
+}*/
+
+.menu_desplegable_plataformas {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* Ocultamos el contenido que se desborda */
+  max-height: 0; /* Inicialmente el contenido está oculto */
+ transition: max-height 0.5s ease; /* Animación de transición */
+}
+
+/*input[type="checkbox"] { 
+  display: none; 
+} 
+
+input[type="checkbox"]:checked ~ .menu_desplegable_plataformas {
+  max-height: 500px; /* Altura máxima del menú desplegable */
+  /*display: flex; /* Mostramos el contenido al expandir */
+/*}
+
+.services-label {
+  text-align: center;
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el label */
+/*}*/
+
+.services-label {
+  text-align: center;
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el label */
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.accordion {
+  --bs-accordion-bg: : rgb(28, 56, 102) !important;
+  width: 400px;
+}
+
+/*.menu_desplegable_plataformas:hover ~ .menu_desplegable_plataformas {
+  display: flex;
+}*/
+
+#service-mod-infor{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#service-plataformas {
+  width: 100%;
+}
+
+#service-procesos,#service-bpaas,#service-medida,#service-coaching {
+  padding-left: 50px;
+}
+
+.services-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'CodecColdTrial', sans-serif;
+  background-color: rgb(28, 56, 102);
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0px 1px 50px -35px rgba(0,0,0,0.62);
+
+}
+
+.services-view {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0px 1px 50px -10px rgba(0,0,0,0.62);
+}
+
+.service-pov {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+#service-procesos {
+  display: flex;
+}
+
+#arrow-plataformas {
+  transition: 0.5s;
+}
+
+.service-pov h3{
+  margin-left: 15px;
+  margin-right: 25px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(28, 56, 102);
+}
+
+.service-pov p{
+  margin-left: 15px;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+.service-pov li{
+  margin-right: 25px;  
+  font-size: 25px; 
+}
+
+.service-pov li::marker{
+  color: rgb(28, 56, 102);
+}
+
+.services-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(28, 56, 102); /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px 0px;
+  font-size: 30px;
+  width: 400px;
+}
+
+.service-app-button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.services-button:hover {
+  background-color: white; /* Cambio de color al pasar el mouse */
+  color: #007bff;
+}
+
+.service-content {
+  display: none;
+  padding: 20px;
+  background-color: #f0f0f0; /* Color de fondo del contenedor */
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contendor-modulos-plataformas {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.services-plataformas-modulos {
+  background-color: rgb(28, 56, 102);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-plataformas-modulos p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  font-family: 'CodecColdTrial', sans-serif;
+}
+
+/* Animación al pasar el mouse */
+.services-plataformas-modulos:hover {
+  background-color: #fff;
+  color: rgb(28, 56, 102);
+  transform: translateY(-5px); /* Efecto de levantamiento */
+}
+
+/* Estilo para mostrar el contenedor */
+.service-content.active {
+  display: block;
+}
+
+
+
+.testimonial-section {
+  margin-top: 200px;
+  text-align: center;
+
+  font-family: 'CodecColdTrial', sans-serif;
+
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #007bff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+}
+
+.testimonial-carousel {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+}
+
+.testimonial-item.active {
+  opacity: 1;
+  display: flex;
+
+}
+.testimonial-item img{
+  width: 250px;
+}
+
+.testimonial-item h1, .testimonial-item p {
+  text-align: center; 
+}
+
+.testimonial-item h1 {
+  font-size: 50px;
+}
+
+.testimonial-item  p {
+  font-size: 30px;
+  margin: 0px 50px
+}
+
+.descripcion-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonial-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/*Pagina nosotros*/
+.header_nosotros {
+  background-image: url('images/nosotros/manos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav_header_nosotros .nav_lista ul li {
+  padding: 0px 20px;
+  list-style: none;
+  color: rgb(28, 56, 102);
+  font-family: 'CodecColdTrial', sans-serif;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+#navbar-nosotros {
+  position: relative; /* o posición inicial según la estructura de tu diseño */
+  transition: top 0.3s;
+}
+
+#navbar_nosotros.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Opcional: asegura que el navbar ocupe el ancho completo */
+  z-index: 1000; /* Ajusta según sea necesario */
+  background-color: white;
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+}
+
+#navbar_nosotros.sticky .nav_imagenLogo {
+  height: 50px;
+}
+
+
+.main_nosotros_section_presentacion{
+  margin: 0px;
+  padding: 100px 0px;
+  height: 500px;
+}
+
+.nosotros_section_acerca{
+  color: white;
+}
+
+.nosotros_section_acerca{
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: 'CodecColdTrial', sans-serif;
+  background-color: rgb(28, 56, 102);
+}
+
+.nosotros_section_acerca h1{
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 50px;
+  width: 80%;
+
+}
+
+.nosotros_section_acerca p {
+  margin-left: 20px;
+  font-size: 25px;
+  width: 80%;
+}
+
+
+.nosotros_section_acerca iframe {
+  width: 2000px;
+  height: 400px;
+  margin-right: 50px;
+}
+
+.nosotros_section_mision {
+  font-family: 'CodecColdTrial', sans-serif;
+  font-style: italic;
+  margin-top: 120px;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.nosotros_section_buttons_founder {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nosotros_section_founder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.nosotros_section_founder_contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 50px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(28, 56, 102, 0.9);
+  width: 50;
+  width: 80%;
+}
+
+.nosotros-founder-button {
+  color: rgb(28, 56, 102);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+}
+
+.nosotros-founder-button:hover {
+  background-color: rgb(28, 56, 102);
+  color: white;
+}
+
+.founder_text {
+  font-size: 23px;
+}
+
+#founder1 {
+  display: none;
+}
+
+#founder2{
+  display: flex;
+}
+
+.section_nosotros_porque {
+  font-family: 'CodecColdTrial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.section_nosotros_porque  h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.beneficios_porque {
+  display: flex;
+}
+
+.beneficios_porque ul {
+  width: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 25px;
+}
+
+#beneficio1{
+  padding-left: 50px;color:#0056b3;
+  cursor: pointer;
+}
+
+#beneficio1:hover {
+  background-color: #0056b3;
+  color: white;
+  
+  
+}
+
+#beneficio1:hover ~ #beneficio2{
+  background-color: white;
+  color:#0056b3;
+}
+
+
+#beneficio2{
+  padding-right: 25px; background-color: #0056b3; color: white;  cursor: pointer;
+
+}
+
+/*Page industrias*/
+.header_industria {
+  background-image: url('images/industrias/back_industria.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.section_industrias_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'CodecColdTrial', sans-serif;
+  margin-top: 100px;
+}
+
+#navbar_industria {
+  position: relative; /* o posición inicial según la estructura de tu diseño */
+  transition: top 0.3s;
+}
+
+
+#navbar_industria.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Opcional: asegura que el navbar ocupe el ancho completo */
+  z-index: 1000; /* Ajusta según sea necesario */
+  background-color: white;
+  box-shadow: 0px 30px 35px -30px rgba(0,0,0,0.62);
+}
+
+#navbar_industria.sticky .nav_imagenLogo {
+  height: 50px;
+}
+
+.titulo_industrias {
+  color: rgb(28, 56, 102);
+}
+
+.contenedor_inustrias {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_inustrias a{
+  text-decoration: none;
+}
+
+.cardIndustria {
+  margin: 20px 30px;
+  width: 450px;
+}
+
+.cardIndustria .card-body {
+  background-color: rgb(28, 56, 102);
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.cardIndustria:hover {
+  box-shadow: 1px 1px 10px  rgb(28, 56, 102);
+  text-shadow: 0 0 1px white;
+}
+
+.cardIndustria h5 {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: x-large;
+}
+
+.cardIndustria img {
+  width: 100%;
+  padding: 0px;
+}
+
+.section_mapa {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: 'CodecColdTrial', sans-serif;
+  color: rgb(28, 56, 102);
+
+}
+
+.section_mapa h3{
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+.i4ewOd-pzNkMb-haAclf {display: none !important;}
+.QUIbkc {
+  display: none !important;
+}

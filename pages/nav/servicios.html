@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COU - Servicios</title>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" type="./images/" href="../../images/favicon-32x32.png">
+
+
+    <!-- JavaScript -->
+    <script defer src="../../script/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script defer src="../../script/jquerys_services.js"></script>
+    <script defer src="../../script/pagina_servicios.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="header_servicios">
+        <nav class="nav_header" id="navbar_servicios">
+            <a href="../../index.html"><img class="nav_imagenLogo" src="../../images/LogosCOU_Blanco-01.png" alt=""></a>
+            <div class="nav_navegacion">
+                <div class="nav_lista">
+                    <ul>
+                        <a href="./nosotros.html"><li>Nosotros</li></a>
+                        <a href="#"><li>Servicios</li></a>
+                        <a href="./industria.html">                        
+                          <li>Industrias</li>
+                        </a>
+                        <a href="./contacto.html">                        
+                          <li>Contacto</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav_contactos">
+                    <a href=""><img src="../../images/socialmedia/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/company/cou-consulting/mycompany/"><img src="../../images/socialmedia/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="main_servicios_section_presentacion">
+            <div class="section_presentacion_industria">
+                <h1 class="titulo_industria1">Industrias</h1>
+                <h3 class="">Contamos con experiencia implementando plataforma tecnológicas para la cadena de
+                    suministro.</h3>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="section_ayuda_industria">
+            <h1>¿Como podemos ayudarte?</h1>
+            <div class="resumen_texto_industria">
+                <p>Nuestra consultora ofrece una gama de servicios diseñados específicamente para satisfacer las
+                    necesidades del sector de Retail & CPG. Utilizando tecnologías avanzadas y enfoques innovadores,
+                    ayudamos a las empresas a optimizar sus operaciones y maximizar su rendimiento empresarial.</p>
+            </div>
+        </section>
+
+
+        <section class="section-services">
+            <div class="services-container">
+              
+                <div class="services-option">
+                    <div id="button-services-plataformas"class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item" style="display: flex;flex-direction: column;align-items: center">
+                              <button onclick="toggleService(5)" class="services-button services-label" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="buttonAcordion">
+                                Plataformas 
+                              </button>
+                              <!--  <i class="fas fa-chevron-up" id="arrow-plataformas"></i> -->
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <button class="services-button-desplegables">Oracle</button>
+                                <button class="services-button-desplegables"  onclick="toggleService(6)">Infor</button>
+                                <button class="services-button-desplegables">Logility</button>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- <div class="services-section-button-desplegables">
+                        <input type="checkbox" id="sec1"> 
+                        <label class="services-button services-label" onclick="toggleService(5)" id="button-services-plataformas" for="sec1">Plataformas</label>
+                        <div class="menu_desplegable_plataformas">
+                                <button class="services-button-desplegables">Oracle</button>
+                                <button class="services-button-desplegables">Infor</button>
+                                <button class="services-button-desplegables">Logility</button>
+                        </div>
+                    </div> -->
+                    <button class="services-button" onclick="toggleService(1)">Procesos</button>
+                    <button class="services-button" onclick="toggleService(2)">BPaaS</button>
+                    <button class="services-button" onclick="toggleService(3)">A la medida</button>
+                    <button class="services-button" onclick="toggleService(4)">Coaching Ontologico</button>
+                </div>
+                <div class="services-view">
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-procesos">
+                        <h3>DISEÑO DE PROCESOS</h3>
+                        <p>Los procesos y personas correctas son vitales en toda jornada de transformación digital y lo sabemos muy bien, por lo que contamos con un área específica para implementación de procesos de negocio la cual tiene entre sus funciones:</p>
+                        <ul>
+                            <li>Alinear el(los) proceso(s) de negocio a los objetivos de la empresa</li>
+                            <li>Identificar los roles y responsibilidades necesarios para alcanzar dichos objetivos.</li>
+                            <li>Recomendar políticas y procedimientos para hacer cumplir el proceso.</li>
+                            <li>Apoyar a la empresa en la gestión del cambio.</li>
+                        </ul>
+                    </div>
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-bpaas">
+                        <h3>PLANNING-AS-A-SERVICE</h3>
+                        <p>Contamos con las siguientes suscripciones:</p>
+                        <ul>
+                            <li>Maquila del cálculo de políticas de inventario</li>
+                            <li>Maquila del pronóstico estadístico de la demanda</li>
+                            <li>Análisis de diseño de red</li>
+                            <li>Tercerización del equipo de planeación de la demanda y de suministro.</li>
+                        </ul>
+                        <h3>SUPPORT-AS-A-SERVICE</h3>
+                        <p>Si requiere de apoyo para aumentar temporalmente la capacidad de su equipo de TI durante ciertos momentos en el mes, puede contar con nuestro servicio de "Soporte como Servicio" donde un equipo de especialistas estará disponible para usted en los momentos que más los requiere.</p>
+                        
+                    </div>
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-medida">
+                        <h3>SOLUCIONES A LA MEDIDA</h3>
+                        <p>Sabemos que muchas veces no es posible encontrar una solución que se adapte a las necesidades de su empresa por lo cual contamos con un equipo de expertos en diseño y desarrollo de soluciones a la medida para sus necesidades en la cadena de suministro.</p>
+                        <p>Nuestro trabajo incluye propuestas desde desarrollos bajo un modelo tradicional hasta aplicaciones utilizando tecnologías emergentes, tales como Blockchain, Inteligencia Artificial, Realidad Aumentada, etc.</p>
+                    </div>
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-coaching">
+                        <h3>COACHING ONTOLÓGICO EN ORGANIZACIONES</h3>
+                        <p>En toda organización existe una red de comunicación por la cual la forma de conversar y el entrelazamiento de las emociones inciden directamente en sus resultados, por lo que el Coaching</p>
+                        <p>Ontológico se manifiesta como una gran oportunidad; potenciando el rendimiento de los miembros de una organización en tiempos de cambio.</p>
+                        <p>Permite desarrollar practicas acordes con el nuevo modelo de gestión profesional. Generando un estilo de comunicación claro y confiable para proponer, disentir y diseñar acciones. Intervenir en los procesos de aprendizajes de la empresa u organización; utilizando herramientas para acompañar y anticiparse a las dificultades de la competencia generando mayor productividad, efectividad y bienestar</p>
+                    </div>
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-plataformas">
+                        <div class="aplicaciones_partner_servicios">
+                            <div class="container-partner-servicios">
+                                <div class="image-container" onclick="mostrarMensajeAppOracle()" id="image-container-oracle">
+                                    <img class="imagen-app" src="../../images/servicios/oracleMono.png" alt="Imagen" id="imagen-oracle">
+                                    <img class="imagen-app-secondary" src="../../images/servicios/oracle.png" alt="Imagen" id="imagen-oracleMono">
+                                </div>
+                            </div>
+            
+                            <div class="container-partner-servicios">
+                                <div class="image-container" onclick="mostrarMensajeAppLogility()" id="image-container-logility">
+                                    <img class="imagen-app" src="../../images/servicios/logilityMono.png" alt="Imagen" id="imagen-logility">
+                                    <img class="imagen-app-secondary" src="../../images/servicios/logility.png" alt="Imagen" id="imagen-logilityMono">
+
+                                </div>
+                            </div>
+            
+                            <div class="container-partner-servicios">
+                                <div class="image-container" onclick="toggleService(6)" id="image-container-infor">
+                                    <img class="imagen-app" src="../../images/servicios/inforMono.png" alt="Imagen" id="imagen-infor">
+                                    <img class="imagen-app-secondary" src="../../images/servicios/infor.png" alt="Imagen" id="imagen-inforMono">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-pov animate__animated animate__fadeIn" id="service-mod-infor">
+                        <div class="contendor-modulos-plataformas">
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo1"><p id="nombre-modulo1">Planeación del suministro (SP)</p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo2"><p id="nombre-modulo2">Planeación  de ventas y operaciones (S&OP)
+                            </p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo3"><p id="nombre-modulo3">Programación de la produccion (PPO)</p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo4"><p id="nombre-modulo4">Distribution Resource Planning (DRP)</p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo5"><p id="nombre-modulo5">Warehouse Managment System (WMS)</p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo6"><p id="nombre-modulo6">Transportation management system (TMS)</p></div>
+                            <div class="services-plataformas-modulos" id="contenedor-nombre-modulo7"><p id="nombre-modulo7">Product Lifecycle Management (PLM)</p></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="testimonial-carousel">
+                <div class="testimonial-item animate__animated animate__fadeIn">
+                    <div>
+                        <img src="../../images/servicios/testimonios/juan.jpg" alt="">
+                    </div>
+
+                    <div class="descripcion-testimonial">
+                        <h1 class="author"><font style="color: #0056b3;">Juan Reyes </font> - SEO</h1>
+                        <p>Mi experiencia trabajando con <font style="color: #0056b3;"> COU </font> ha sido excepcional para mejorar nuestra estrategia de SEO. La implementación experta de plataformas tecnológicas como Oracle ha tenido un impacto significativo en nuestra capacidad para tomar decisiones informadas.</p>
+                    </div>  
+                </div>
+                <div class="testimonial-item animate__animated animate__fadeIn">
+                    <div>
+                        <img src="../../images/servicios/testimonios/maria.jpg" alt="">
+                    </div>
+
+                    <div class="descripcion-testimonial">
+                        <h1 class="author"> <font style="color: #0056b3;">María González </font> - Marketing Manager </h1>
+                        <p><font style="color: #0056b3;">COU </font> ha sido fundamental para mejorar nuestra eficacia en marketing. Sus soluciones de diseño de procesos y servicios personalizados nos han permitido alinear nuestros objetivos comerciales con las estrategias de marketing de manera efectiva.</p>
+                    </div>
+                    
+                </div>
+                <div class="testimonial-item animate__animated animate__fadeIn">
+                    <div>
+                        <img src="../../images/servicios/testimonios/carlos.jpg" alt="">
+                    </div>
+
+                    <div class="descripcion-testimonial">
+                        <h1 class="author"><font style="color: #0056b3;">Carlos Ruiz  </font> - Chief Tech</h1>
+                        <p>He encontrado en esta consultora un socio estratégico invaluable. Sus servicios de Planning-as-a-Service y soporte tecnológico nos han permitido mantenernos ágiles y eficientes en un entorno digital dinámico. </p>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev">&lt;</button>
+                    <button class="testimonial-next">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_formulario">
+            <h1>Contactate con nosotros</h1>
+            <form action="#" method="POST">
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="nombre" placeholder="Nombre" required>
+              <input type="text" name="apellido" placeholder="Apellido" required>
+              <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+              <input type="text" name="pais" placeholder="País" required>
+              <input type="text" name="empresa" placeholder="Nombre de la empresa" required>
+              <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_contenedor_listas">
+            <ul>
+                <li>Productos</li>
+                <li>Servicios</li>
+                <li>Nosotros</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+        <img src="../../images/LogosCOU_Blanco-02.png" alt="">
+        <p class="derechosReservados">© All Rights Reserved. COU Consulting Firm Ltd.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
